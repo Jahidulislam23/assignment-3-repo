@@ -4,8 +4,372 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    body{
+        font-family: "ADLaM Display", serif;
+    }
+    text{
+        font-family: "Sora", serif;
+    }
+</style>
 </head>
 <body>
-    
+    <!-- header file -->
+    <header>
+        <!-- navbar section -->
+        <nav>
+            <div>
+                <div class="navbar bg-pink-50 sm:border-2">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        </div>
+                        
+                        </div>
+                        <img src="c1-assets/logo-header.png" alt="">
+                        <a class="text">Browse4Pets</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                    </div>
+                    <div class="navbar-end gap-12">
+                        <img class="w-5" src="c1-assets/bell-regular.svg" alt="">
+                        <img class="w-5" src="c1-assets/magnifying-glass-solid.svg" alt="">
+                        <a class="btn btn-outline btn-warning">Login</a>
+                        <a class="btn btn-warning">Register</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <section>
+            <div>
+                <div class="lg:absolute pt-28">
+                    <h1 class="body text-6xl ">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
+            <p class="text text-gray-600 pt-5">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+            <div class="pt-5">
+                <a class="btn btn-warning">Find a pet</a>
+            </div>
+                </div>
+                <div class="w-full -top-96">
+                    <img src="c1-assets/cat-big.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- card section -->
+        <section>
+            <div class="pt-20">
+                <h1 class="text-4xl font-bold body">Browse By Categories</h1>
+            </div>
+            <div class="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 pt-16 gap-5 pb-20">
+                <!-- card 1 -->
+                <div class="shadow-lg bg-yellow-200 rounded-lg">
+                    <div>
+                      <img class="mx-auto pt-5" src="c1-assets/dog-cartoon.png" alt="">
+                    </div>
+                    <h1 class=" body font-bold  pt-4 text-center pb-5 body">Dog</h1>
+                    <p class="para text-gray-700 text-center pb-5 text">3 items</p>
+                </div>
+                <div>
+                    <!-- card 2 -->
+                <div class="shadow-lg bg-yellow-200 rounded-lg">
+                    <div  class="max-auto">
+                      <img class="mx-auto pt-5" src="c1-assets/fish-cartoon.png" alt="">
+                    </div>
+                    <h1 class=" body font-bold  pt-4 text-center pb-5 body">Fish</h1>
+                    <p class="para text-gray-700 text-center pb-5 text">3 items</p>
+                </div>
+            </div>
+            <!-- card 3 -->
+                <div class="shadow-lg bg-yellow-200 rounded-lg">
+                    <div  class="max-auto">
+                        <img class="mx-auto pt-5" src="c1-assets/cat-cartoon.png" alt="">
+                    </div>
+                    <h1 class=" body font-bold  pt-4 text-center pb-5 body">Cat</h1>
+                    <p class="para text-gray-700 text-center pb-5 text">3 items</p>
+                </div>
+                <!-- card 4 -->
+                <div class="shadow-lg bg-yellow-200 rounded-lg">
+                    <div  class="max-auto">
+                      <img class="mx-auto pt-5  rounded-full" src="c1-assets/bird-cartoon.png" alt="">
+                    </div>
+                    <h1 class=" body font-bold  pt-3 text-center pb-5 body">Birds</h1>
+                    <p class="para text-gray-700 text-center pb-5 text">3 items</p>
+                </div>
+                <!-- card 5 -->
+                <div class="shadow-lg bg-yellow-200 rounded-lg">
+                    <div  class="max-auto">
+                      <img class="mx-auto pt-5" src="c1-assets/mouse-cartoon.png" alt="">
+                    </div>
+                    <h1 class=" body font-bold  pt-4 text-center pb-5 body"> Small Pet</h1>
+                    <p class="para text-gray-700 text-center pb-5 text">3 items</p>
+                </div>
+                <!-- card 6 -->
+                <div class="shadow-lg bg-yellow-200 rounded-lg">
+                <div  class="max-auto">
+                    <img class="mx-auto pt-5" src="c1-assets/rabbit-cartoon.png" alt="">
+                </div>
+                    <h1 class=" body font-bold  pt-4 text-center pb-5 body">Robit</h1>
+                    <p class="para text-gray-700 text-center pb-5 text">2 items</p>
+                </div>
+            </div>
+        </section>
+        <!-- extra card -->
+        <!-- <section>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 pt-16 ">
+                <div class="border-r-2 border-b-2">
+                    <div>
+                      <img class="mx-auto pb-5" src="images/business.png" alt="">
+                    </div>
+                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Business Law</h1>
+                    <p class="para text-gray-500 text-center pb-5">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+                    <div class=" mx-auto">
+                      <img class="mx-auto pb-5" src="images/Frame.png" alt="">
+                    </div>
+                </div>
+                <div class=" bg-gradient-to-t from-gray-500 to-gray-50 ">
+                  <div class="border-r-2 border-b-2 border-t-2 bg-gradient-to-t from-gray-50 to-gray-100 h-full">
+                    <div  class="max-auto">
+                      <img class="mx-auto pb-5" src="images/criminal.png" alt="">
+                    </div>
+                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Criminal Law</h1>
+                    <p class="para text-gray-500 text-center pb-5">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+                    <div  class="max-auto">
+                      <img class="mx-auto pb-5" src="images/Frame.png" alt="">
+                    </div>
+                </div>
+
+
+                </div>
+              
+                <div class="border-b-2">
+                    <div  class="max-auto">
+                      <img class="mx-auto pb-5" src="images/child.png" alt="">
+                    </div>
+                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Child Support</h1>
+                    <p class="para text-gray-500 text-center pb-5">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+                    <div  class="max-auto">
+                      <img class="mx-auto pb-5" src="images/Frame.png" alt="">
+                    </div>
+                </div>
+                <div class="border-r-2">
+                    <div  class="max-auto">
+                      <img class="mx-auto pb-5" src="images/education.png" alt="">
+                    </div>
+                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Education Law</h1>
+                    <p class="para text-gray-500 text-center pb-5">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+                    <div  class="max-auto">
+                      <img class="mx-auto pb-5" src="images/Frame.png" alt="">
+                    </div>
+                </div>
+                <div class="border-r-2">
+                    <div  class="max-auto">
+                      <img class="mx-auto pb-5" src="images/divorce.png" alt="">
+                    </div>
+                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5"> Divorce Law</h1>
+                    <p class="para text-gray-500 text-center pb-5">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+                    <div  class="max-auto">
+                      <img class="mx-auto pb-5" src="images/Frame.png" alt="">
+                    </div>
+                </div>
+                <div>
+                  <div  class="max-auto">
+                    <img class="mx-auto pb-5" src="images/divorce.png" alt="">
+                  </div>
+                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Tax Law</h1>
+                    <p class="para text-gray-500 text-center pb-5">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+                  <div  class="max-auto">
+                    <img class="mx-auto pb-5" src="images/Frame.png" alt="">
+                  </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Trending Pet Products -->
+        <section>
+            <div class="bg-pink-100 w-full pb-20">
+                <div class="pt-20">
+                    <h1 class="text-4xl font-bold">Trending Pet Products</h1>
+                </div>
+                <div class="pt-20 grid lg:grid-cols-2 sm:grid-cols-1 gap-14 ">
+                    <div class=" bg-yellow-300 shadow-lg rounded-lg h-[450px]">
+                        <h1 class="font-bold text-3xl body">T-shirt for Dogs</h1>
+                        <p class="text-gray-400 text">Discover a world of treats,toys,and <br>essentials handpicked for</p>
+                        <div>
+                            <a class="btn"> Shop Now</a>
+                        </div>
+                        <div class="pl-32 absolute">
+                            <img src="c1-assets/cute-pet-small.png" alt="">
+                        </div>
+                    </div>
+                    <!-- small card -->
+                    <div class="grid lg:grid-cols-3 sm:grid-cols-2 h-[450px] gap-5">
+                        <!-- small card 1 -->
+                        <div class="flex gap-5 pb-5 shadow-lg bg-white-800 rounded-lg">
+                            <div class="avatar">
+                                <div class="w-24 rounded-xl bg-pink-200">
+                                    <img src="c1-assets/bird-cartoon.png" />
+                                </div>
+                            </div>
+                                <div>
+                                    <div class="flex">
+                                        <img class="w-5 "src="c1-assets/star-solid.svg" alt="">
+                                    <h3>4.5</h3>
+                                    </div>
+                                    <h5>Pet Bed</h5><br>
+                                    <h5>$39.99</h5>
+                                </div>
+                        </div>
+                        <!-- small card 2 -->
+                        <div class="flex gap-5  pb-5 shadow-lg bg-white-800 rounded-lg">
+                            <div class="avatar">
+                                <div class="w-24 rounded-xl bg-pink-200">
+                                    <img src="c1-assets/bird-cartoon.png" />
+                                </div>
+                            </div>
+                                <div>
+                                    <div class="flex">
+                                        <img class="w-5" src="c1-assets/star-solid.svg" alt="">
+                                    <h3>4.5</h3>
+                                    </div>
+                                    <h5>Pet Bed</h5><br>
+                                    <h5>$39.99</h5>
+                                </div>
+                        </div>
+                        <!-- small card 3 -->
+                        <div class="flex gap-5 pb-5 shadow-lg bg-white-800 rounded-lg ">
+                            <div class="avatar">
+                                <div class="w-24 rounded-xl bg-pink-200">
+                                    <img src="c1-assets/bird-cartoon.png" />
+                                </div>
+                            </div>
+                                <div>
+                                    <div class="flex">
+                                        <img class="w-5" src="c1-assets/star-solid.svg" alt="">
+                                    <h3>4.5</h3>
+                                    </div>
+                                    <h5>Pet Bed</h5><br>
+                                    <h5>$39.99</h5>
+                                </div>
+                        </div>
+                        <!-- small card 4 -->
+                        <div class="flex gap-5 pb-5 shadow-lg bg-white-800 rounded-lg">
+                            <div class="avatar">
+                                <div class="w-24 rounded-xl bg-pink-200">
+                                    <img src="c1-assets/bird-cartoon.png" />
+                                </div>
+                            </div>
+                                <div>
+                                    <div class="flex">
+                                        <img class="w-5" src="c1-assets/star-solid.svg" alt="">
+                                    <h3>4.5</h3>
+                                    </div>
+                                    <h5>Pet Bed</h5><br>
+                                    <h5>$39.99</h5>
+                                </div>
+                        </div>
+                        <!-- small card 5 -->
+                        <div class="flex gap-5 pb-5 shadow-lg bg-white-800 rounded-lg">
+                            <div class="avatar">
+                                <div class="w-24 rounded-xl bg-pink-200">
+                                    <img src="c1-assets/bird-cartoon.png" />
+                                </div>
+                            </div>
+                                <div>
+                                    <div class="flex">
+                                        <img class="w-5" src="c1-assets/star-solid.svg" alt="">
+                                    <h3>4.5</h3>
+                                    </div>
+                                    <h5>Pet Bed</h5><br>
+                                    <h5>$39.99</h5>
+                                </div>
+                        </div>
+                        <!-- small card 6 -->
+                        <div class="flex gap-5 pb-5 shadow-lg bg-white-800 rounded-lg">
+                            <div class="avatar">
+                                <div class="w-24 rounded-xl bg-pink-200">
+                                    <img src="c1-assets/bird-cartoon.png" />
+                                </div>
+                            </div>
+                                <div>
+                                    <div class="flex">
+                                        <img class="w-5" src="c1-assets/star-solid.svg" alt="">
+                                    <h3>4.5</h3>
+                                    </div>
+                                    <h5>Pet Bed</h5><br>
+                                    <h5>$39.99</h5>
+                                </div>
+                        </div>
+                        <!-- small card 7 -->
+                        <div class="flex gap-5 pb-5 shadow-lg bg-white-800 rounded-lg">
+                            <div class="avatar">
+                                <div class="w-24 rounded-xl bg-pink-200">
+                                    <img src="c1-assets/bird-cartoon.png" />
+                                </div>
+                            </div>
+                                <div>
+                                    <div class="flex">
+                                        <img class="w-5" src="c1-assets/star-solid.svg" alt="">
+                                    <h3>4.5</h3>
+                                    </div>
+                                    <h5>Pet Bed</h5><br>
+                                    <h5>$39.99</h5>
+                                </div>
+                        </div>
+                        <!-- small card 8 -->
+                        <div class="flex gap-5 pb-5 shadow-lg bg-white-800 rounded-lg">
+                            <div class="avatar">
+                                <div class="w-24 rounded-xl bg-pink-200">
+                                    <img src="c1-assets/bird-cartoon.png" />
+                                </div>
+                            </div>
+                                <div>
+                                    <div class="flex">
+                                        <img class="w-5" src="c1-assets/star-solid.svg" alt="">
+                                    <h3>4.5</h3>
+                                    </div>
+                                    <h5>Pet Bed</h5><br>
+                                    <h5>$39.99</h5>
+                                </div>
+                        </div>
+                        <!-- small card 9 -->
+                        <div class="flex gap-5 pb-5 shadow-lg bg-white-800 rounded-lg">
+                            <div class="avatar">
+                                <div class="w-24 rounded-xl bg-pink-200">
+                                    <img src="c1-assets/bird-cartoon.png" />
+                                </div>
+                            </div>
+                                <div>
+                                    <div class="flex">
+                                        <img class="w-5" src="c1-assets/star-solid.svg" alt="">
+                                    <h3>4.5</h3>
+                                    </div>
+                                    <h5>Pet Bed</h5><br>
+                                    <h5>$39.99</h5>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- main file -->
+    <main></main>
+    <!-- footer -->
+    <footer></footer>
 </body>
 </html>
