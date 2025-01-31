@@ -29,8 +29,8 @@
     <header>
         <!-- navbar section -->
         <nav>
-            <div>
-                <div class="navbar bg-pink-50  lg:border-2-hidden sm:border-2  lg:border-hidden sm:border sm:border-black">
+            <div class="">
+                <div class="navbar bg-pink-50 border-2 border-black  ">
                     <div class="navbar-start">
                         <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -38,20 +38,21 @@
                         
                         </div>
                         <img src="c1-assets/logo-header.png" alt="">
-                        <a class="text ">Browse<span class="text-orange-500">4</span>Pets</a>
+                        <a class="text hidden lg:block ">Browse<span class="text-orange-500">4</span>Pets</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 hidden lg:block">
-                        <li><a>Find a pet</a></li>
-                        <li><a>Breeds</a></li>
-                        <li><a>Contact us</a></li>
+                    <ul class="menu menu-horizontal px-1 ">
+                        <li class="hidden lg:block"><a>Find a pet</a></li>
+                        <li class="hidden lg:block"><a>Breeds</a></li>
+                        <li class="hidden lg:block"><a>Contact us</a></li>
                     </ul>
                     </div>
-                    <div class="navbar-end gap-12">
-                        <img class="w-5" src="c1-assets/bell-regular.svg" alt="">
-                        <img class="w-5" src="c1-assets/magnifying-glass-solid.svg" alt="">
-                        <a class="btn btn-outline btn-warning">Login</a>
-                        <a class="btn btn-warning">Register</a>
+                    <div class="navbar-end gap-12 ">
+                        <img class="w-5 hidden lg:block" src="c1-assets/bell-regular.svg" alt="">
+                        <img class="w-5 hidden lg:block" src="c1-assets/magnifying-glass-solid.svg" alt="">
+                        <a class="btn btn-outline btn-warning hidden lg:block pt-4">Login</a>
+                        <a class="btn btn-warning hidden lg:block pt-4">Register</a>
+                        <img class="w-5 lg:hidden" src="c1-assets/bars-solid.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -59,14 +60,14 @@
         <!-- banner section -->
         <section>
             <div>
-                <div class="lg:absolute sm:absolute pt-28">
+                <div class=" pt-28 absolute">
                     <h1 class="body text-3xl ">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
-            <p class="text text-gray-600 pt-5">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+                    <p class="text text-gray-600 pt-5">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
             <div class="pt-5">
                 <a class="btn btn-warning">Find a pet</a>
             </div>
                 </div>
-                <div class="w-full">
+                <div class="w-full relative">
                     <img src="c1-assets/cat-big.png" alt="">
                 </div>
             </div>
@@ -76,13 +77,13 @@
             <div class="pt-20">
                 <h1 class="text-3xl font-bold body">Browse By Categories</h1>
             </div>
-            <div class="sm:grid-cols-2">
-                <div class="grid lg:grid-cols-6 sm:grid-cols-2  pt-16 gap-5 pb-20">
+            <div>
+                <div class="grid lg:grid-cols-6 grid-cols-2  pt-16 gap-5 pb-20">
                     <!-- card 1 -->
                     <div class="shadow-lg bg-yellow-200 rounded-lg">
-                        <div class="avatar pl-20  pt-5">
+                        <div class="avatar pl-10 lg:pl-20  pt-5">
                             <div class=" rounded-full bg-white mx-auto">
-                              <img class="mx-auto w-8 " src="c1-assets/dog-cartoon.png" />
+                              <img class="mx-auto w-8 p-5" src="c1-assets/dog-cartoon.png" />
                             </div>
                           </div>
                         <h1 class=" body font-bold  pt-4 text-center pb-5 body">Dog</h1>
@@ -90,9 +91,9 @@
                     </div>
                         <!-- card 2 -->
                     <div class="shadow-lg bg-yellow-200 rounded-lg">
-                        <div class="avatar pl-20 pt-5">
-                            <div class="w-24 rounded-full bg-white mx-auto">
-                              <img class="mx-auto " src="c1-assets/fish-cartoon.png" />
+                        <div class="avatar pl-10 lg:pl-20 pt-5">
+                            <div class=" rounded-full bg-white mx-auto">
+                              <img class="mx-auto w-8 p-5" src="c1-assets/fish-cartoon.png" />
                             </div>
                           </div>
                         <h1 class=" body font-bold  pt-4 text-center pb-5 body">Fish</h1>
@@ -100,9 +101,9 @@
                     </div>
                     <!-- card 3 -->
                     <div class="shadow-lg bg-yellow-200 rounded-lg">
-                        <div class="avatar pl-20 pt-5">
-                            <div class="w-24 rounded-full bg-white mx-auto">
-                              <img class="mx-auto " src="c1-assets/cat-cartoon.png" />
+                        <div class="avatar pl-10 lg:pl-20 pt-5">
+                            <div class=" rounded-full bg-white mx-auto">
+                              <img class="mx-auto w-8 p-5" src="c1-assets/cat-cartoon.png" />
                             </div>
                           </div>
                         <h1 class=" body font-bold  pt-4 text-center pb-5 body">Cat</h1>
@@ -110,9 +111,9 @@
                     </div>
                     <!-- card 4 -->
                     <div class="shadow-lg bg-yellow-200 rounded-lg">
-                        <div class="avatar pl-20 pt-5">
-                            <div class="w-24 rounded-full bg-white mx-auto">
-                              <img class="mx-auto " src="c1-assets/bird-cartoon.png" />
+                        <div class="avatar pl-10 lg:pl-20 pt-5">
+                            <div class=" rounded-full bg-white mx-auto">
+                              <img class="mx-auto w-8 p-5" src="c1-assets/bird-cartoon.png" />
                             </div>
                           </div>
                         <h1 class=" body font-bold  pt-3 text-center pb-5 body">Birds</h1>
@@ -120,9 +121,9 @@
                     </div>
                     <!-- card 5 -->
                     <div class="shadow-lg bg-yellow-200 rounded-lg">
-                        <div class="avatar pl-20 pt-5">
-                            <div class="w-24 rounded-full bg-white mx-auto">
-                              <img class="mx-auto " src="c1-assets/mouse-cartoon.png" />
+                        <div class="avatar pl-10 lg:pl-20 pt-5">
+                            <div class=" rounded-full bg-white mx-auto">
+                              <img class="mx-auto w-8 p-5" src="c1-assets/mouse-cartoon.png" />
                             </div>
                           </div>
                         <h1 class=" body font-bold  pt-4 text-center pb-5 body"> Small Pet</h1>
@@ -130,9 +131,9 @@
                     </div>
                     <!-- card 6 -->
                     <div class="shadow-lg bg-yellow-200 rounded-lg">
-                        <div class="avatar pl-20 pt-5">
-                            <div class="w-24 rounded-full bg-white mx-auto">
-                              <img class="mx-auto" src="c1-assets/rabbit-cartoon.png" />
+                        <div class="avatar pl-10 lg:pl-20 pt-5">
+                            <div class=" rounded-full bg-white mx-auto">
+                              <img class="mx-auto w-8 p-5" src="c1-assets/rabbit-cartoon.png" />
                             </div>
                           </div>
                         <h1 class=" body font-bold  pt-4 text-center pb-5 body">Robit</h1>
@@ -142,96 +143,102 @@
             </div>
         </section>
         <!-- extra card -->
-        <!-- <section>
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 pt-16 ">
-                <div class="border-r-2 border-b-2">
+        <section>
+            <div class="grid lg:grid-cols-3 grid-cols-1 pt-16 gap-5 ">
+                <!-- extra card 1 -->
+                <div class="shadow-lg bg-blue-100 rounded-xl">
                     <div>
-                      <img class="mx-auto pb-5" src="images/business.png" alt="">
+                      <img class="mx-auto pb-5" src="c1-assets/cute-pet-small.png" alt="">
                     </div>
-                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Business Law</h1>
-                    <p class="para text-gray-500 text-center pb-5">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Dog</h1>
+                    <p class="para text-gray-500 text-center pb-5">Doggo ipsum maximum borkdrive extremely cuuuuuute clouds such treat lotsa pats boofers, very jealous pupper blep fluffer borkdrive, long woofer blop wrinkler boofers</p>
                     <div class=" mx-auto">
-                      <img class="mx-auto pb-5" src="images/Frame.png" alt="">
+                      <img class="mx-auto pb-5" src="c1-assets/Frame.png" alt="">
                     </div>
                 </div>
-                <div class=" bg-gradient-to-t from-gray-500 to-gray-50 ">
-                  <div class="border-r-2 border-b-2 border-t-2 bg-gradient-to-t from-gray-50 to-gray-100 h-full">
+                 <!-- extra card 2 -->
+                <div class="  shadow-lg bg-blue-100 rounded-xl ">
+                  <div>
                     <div  class="max-auto">
-                      <img class="mx-auto pb-5" src="images/criminal.png" alt="">
+                      <img class="mx-auto pb-5" src="c1-assets/cute-pet-small.png" alt="">
                     </div>
-                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Criminal Law</h1>
-                    <p class="para text-gray-500 text-center pb-5">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Dog</h1>
+                    <p class="para text-gray-500 text-center pb-5">Doggo ipsum maximum borkdrive extremely cuuuuuute clouds such treat lotsa pats boofers, very jealous pupper blep fluffer borkdrive, long woofer blop wrinkler boofers</p>
                     <div  class="max-auto">
-                      <img class="mx-auto pb-5" src="images/Frame.png" alt="">
+                      <img class="mx-auto pb-5" src="c1-assets/Frame.png" alt="">
                     </div>
                 </div>
 
 
                 </div>
-              
-                <div class="border-b-2">
+               <!-- extra card 3 -->
+                <div class="shadow-lg bg-blue-100 rounded-xl">
                     <div  class="max-auto">
-                      <img class="mx-auto pb-5" src="images/child.png" alt="">
+                      <img class="mx-auto pb-5" src="c1-assets/cute-pet-small.png" alt="">
                     </div>
-                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Child Support</h1>
-                    <p class="para text-gray-500 text-center pb-5">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Dog</h1>
+                    <p class="para text-gray-500 text-center pb-5">Doggo ipsum maximum borkdrive extremely cuuuuuute clouds such treat lotsa pats boofers, very jealous pupper blep fluffer borkdrive, long woofer blop wrinkler boofers</p>
                     <div  class="max-auto">
-                      <img class="mx-auto pb-5" src="images/Frame.png" alt="">
-                    </div>
-                </div>
-                <div class="border-r-2">
-                    <div  class="max-auto">
-                      <img class="mx-auto pb-5" src="images/education.png" alt="">
-                    </div>
-                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Education Law</h1>
-                    <p class="para text-gray-500 text-center pb-5">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
-                    <div  class="max-auto">
-                      <img class="mx-auto pb-5" src="images/Frame.png" alt="">
+                      <img class="mx-auto pb-5" src="c1-assets/Frame.png" alt="">
                     </div>
                 </div>
-                <div class="border-r-2">
+                 <!-- extra card 4 -->
+                <div class="shadow-lg bg-blue-100 rounded-xl">
                     <div  class="max-auto">
-                      <img class="mx-auto pb-5" src="images/divorce.png" alt="">
+                      <img class="mx-auto pb-5" src="c1-assets/cute-pet-small.png" alt="">
                     </div>
-                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5"> Divorce Law</h1>
-                    <p class="para text-gray-500 text-center pb-5">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Dog</h1>
+                    <p class="para text-gray-500 text-center pb-5">Doggo ipsum maximum borkdrive extremely cuuuuuute clouds such treat lotsa pats boofers, very jealous pupper blep fluffer borkdrive, long woofer blop wrinkler boofers</p>
                     <div  class="max-auto">
-                      <img class="mx-auto pb-5" src="images/Frame.png" alt="">
+                      <img class="mx-auto pb-5" src="c1-assets/Frame.png" alt="">
                     </div>
                 </div>
-                <div>
+                 <!-- extra card 5 -->
+                <div class="shadow-lg bg-blue-100 rounded-xl">
+                    <div  class="max-auto">
+                      <img class="mx-auto pb-5" src="c1-assets/cute-pet-small.png" alt="">
+                    </div>
+                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Dog</h1>
+                    <p class="para text-gray-500 text-center pb-5">Doggo ipsum maximum borkdrive extremely cuuuuuute clouds such treat lotsa pats boofers, very jealous pupper blep fluffer borkdrive, long woofer blop wrinkler boofers.</p>
+                    <div  class="max-auto">
+                      <img class="mx-auto pb-5" src="c1-assets/Frame.png" alt="">
+                    </div>
+                </div>
+                 <!-- extra card 6 -->
+                <div class="shadow-lg bg-blue-100 rounded-xl">
                   <div  class="max-auto">
-                    <img class="mx-auto pb-5" src="images/divorce.png" alt="">
+                    <img class="mx-auto pb-5" src="c1-assets/cute-pet-small.png" alt="">
                   </div>
-                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Tax Law</h1>
-                    <p class="para text-gray-500 text-center pb-5">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+                    <h1 class=" body font-bold text-3xl pt-4 text-center pb-5">Dog</h1>
+                    <p class="para text-gray-500 text-center pb-5">Doggo ipsum maximum borkdrive extremely cuuuuuute clouds such treat lotsa pats boofers, very jealous pupper blep fluffer borkdrive, long woofer blop wrinkler boofers.</p>
                   <div  class="max-auto">
-                    <img class="mx-auto pb-5" src="images/Frame.png" alt="">
+                    <img class="mx-auto pb-5" src="c1-assets/Frame.png" alt="">
                   </div>
                 </div>
             </div>
-        </section> -->
+        </section> 
         <!-- Trending Pet Products -->
         <section>
             <div class="bg-pink-50 w-full pb-20">
                 <div class="pt-20">
                     <h1 class="text-3xl font-bold">Trending Pet Products</h1>
                 </div>
-                <div class="pt-20 grid lg:grid-cols-2 sm:grid-cols-1 gap-14 ">
-                    <div class="lg:absolute-right bg-yellow-300 shadow-lg rounded-lg pt-28">
-                        <div class="pl-10">
-                            <h1 class=" text-6xl body">T-shirt for Dogs</h1>
-                            <p class="text-gray-400 text text-3xl pt-2">Discover a world of treats,toys,and <br>essentials handpicked for</p>
-                            <div>
-                                <a class="btn w-72 text "> Shop Now</a>
+                      <!--  -->
+                      <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-6 pt-20 ">
+                       <div>
+                        <div class="hero min-h-screen shadow-xl bg-yellow-300 rounded-xl ">
+                            <div class="hero-content flex-rows lg:flex-row-reverse pb-40">
+                              <img src="c1-assets/cute-pet-mid.png"/>
+                              <div class="pb-96">
+                                <h1 class="">T-shirt For Dogs</h1>
+                                <p class="py-6 text-3xl">Discover a world of treats,toys,and <br>essentials handpicked for</p>
+                                <a class="btn bg-white text-center">Shop Now</a>
+                              </div>
                             </div>
-                            <div class="pl-32 absolute-top -top-5">
-                                <img src="c1-assets/cute-pet-small.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+                          </div>
+                       </div>
                     <!-- small card -->
-                    <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-5">
+                    <div class="grid lg:grid-cols-3 grid-cols-2 gap-5 ">
                         <!-- small card 1 -->
                         <div class="flex gap-5 pb-5 shadow-lg bg-white rounded-lg">
                                 <div class="avatar pt-10 pl-4 ">
@@ -418,7 +425,7 @@
     <footer>
         <div>
          <div>
-            <div class="hero bg-pink-200">
+            <div class="hero bg-pink-200 pb-24">
                 <div class="hero-content flex-col lg:flex-row">
                   <img
                     src="c1-assets/cute-pet-mid.png"/>
